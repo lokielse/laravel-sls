@@ -3,12 +3,11 @@
 namespace Lokielse\LaravelSLS;
 
 use Illuminate\Contracts\Events\Dispatcher;
-use Illuminate\Contracts\Logging\Log as LogContract;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
 use Psr\Log\LoggerInterface as PsrLoggerInterface;
 
-class Writer implements LogContract, PsrLoggerInterface
+class Writer implements PsrLoggerInterface
 {
 
     /**
